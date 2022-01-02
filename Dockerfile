@@ -4,10 +4,10 @@ FROM ubuntu:14.04
 MAINTAINER Erik Kaareng-Sunde esu@enonic.com
 
 # Build container
-#   docker build -t drerik/tftpd .
+#   docker build -t tftpd .
 
 # Start the container with the follonwing command:
-#   docker run -it --rm -p 69:69 -v $(pwd):/var/lib/tftpboot --name tftpd drerik/tftpd
+#   docker run -it --rm -p 69:69 -v $(pwd):/var/lib/tftpboot --name tftpd tftpd
 
 # Install tftpd-hpa deamon
 RUN apt-get update
